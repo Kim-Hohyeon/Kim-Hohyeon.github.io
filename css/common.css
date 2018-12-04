@@ -31,3 +31,10 @@ button::-moz-focus-inner {padding:0; border:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
 strong{font-weight:normal}
 th{font-weight:normal}
+
+#wrap {position:relative; width:100%; background:#fafafa; overflow:hidden;}
+
+header {position:relative; width:100%; background:#000;}
+header h1 a {color:#fff;}
+
+footer {position:relative; width:100%; background:#000;}
