@@ -47,7 +47,10 @@ th{font-weight:normal}
 
 #wrap {position:relative; width:100%; min-height:100%; background:#fafafa; overflow:hidden;}
 
+/* header */
 #header {position:fixed; padding:20px; width:100%; background:#000; box-sizing:border-box; overflow:hidden;}
-#header h1 a {display:inline-block; vertical-align:top; color:#fff;}
+#header .logo {display:inline-block; vertical-align:top; color:#fff;}
 
+
+/* footer */
 #footer {position:relative; text-align:center; background:#000;}
