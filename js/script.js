@@ -1,4 +1,5 @@
 $(document).ready(function(){
-	console.log("hello");
-	$("h1").addClass("logo");
+	$(window).on("load", function(){
+		$(".loading").fadeOut(500);
+	});
 });
