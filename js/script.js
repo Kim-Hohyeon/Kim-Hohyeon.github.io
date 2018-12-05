@@ -21,7 +21,7 @@ $(document).ready(function(){
 		}
 
 		if($(window).scrollTop() <= $(window).height()){
-			TweenMax.to($('.mainVis'), 0.2, {top:-$(window).scrollTop()/4, ease:Power3.easeOut});
+			TweenMax.to($('.mainVis'), 0.3, {top:-$(window).scrollTop()/4, ease:Power3.easeOut});
 		}
 
 		if($(window).scrollTop() + $(window).height() >= $(".workList").offset().top + $(".workList").height()){
