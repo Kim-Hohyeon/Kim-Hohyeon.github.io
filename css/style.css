@@ -1,2 +1,4 @@
 @import url(common.css);
 
+/* Main Visual */
+.mainVis {position:relative; width:100%; height:100vh; background:#ddd;}
