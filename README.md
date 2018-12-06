@@ -1,3 +1,3 @@
-# This is my portfolio
+# This is my Portfolio
 
-welcome!
+안녕하세요! 아직 작업 중인 포트폴리오 입니다!
