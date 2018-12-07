@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css?family=Helvetica:400,700');
+
 *{margin:0; padding:0;}
 html{width:100%; height:100%}
 body{position:relative; font-family:'맑은 고딕', 'Malgun Gothic',  sans-serif; font-size:16px; color:#555; letter-spacing:-0.5px; height:100%; -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:1;}
