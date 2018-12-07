@@ -9,10 +9,14 @@ $(document).ready(function(){
 		TweenMax.to($("html, body"), 0.8, {scrollTop:0, ease:Power3.easeInOut});
 	});
 
+
+	// resize
 	$(window).resize(function(){
 		$(".workList").css({"margin-top" : $(".mainVis").height(), "margin-bottom" : $("#footer").height()});
 	});$(window).resize();
+	
 
+	// scroll
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 20){
 			$("#header").addClass("scrolled");
