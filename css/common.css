@@ -66,7 +66,7 @@ th{font-weight:normal}
 }
 
 #wrap {position:relative; width:100%; min-height:100%; background:#fafafa; overflow:hidden;}
-.con_wrap {position:relative; width:100%; overflow:hidden; z-index:2;}
+.con_wrap {position:relative; z-index:2; width:100%; overflow:hidden; box-shadow: 0 10px 60px rgba(0,0,0,0.7),0 10px 50px rgba(0,0,0,0.3);}
 
 .main_tit {font-family:'Helvetica', '맑은 고딕', 'Malgun Gothic',  sans-serif; font-weight:700; font-size:80px; color:#000; text-align:center;}
 
@@ -83,7 +83,7 @@ th{font-weight:normal}
 #footer:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
 #footer.on {z-index:1;}
 #footer .content {position:relative; width:100%; height:100%; margin:0 auto;}
-#footer .content .contact {padding:70px 0;}
+#footer .content .contact {padding:90px 0 70px;}
 #footer .content .contact .tit {padding-bottom:50px; font-family:'Helvetica', '맑은 고딕', 'Malgun Gothic',  sans-serif; font-weight:400; font-size:80px; color:rgba(255,255,255,0.8);}
 #footer .content .contact a {display:inline-block; font-size:25px; color:rgba(255,255,255,0.6); line-height:1; margin:5px; -webkit-transition:all .3s; transition:all .3s;}
 #footer .content .contact a span:first-child {margin-right:10px;}
