@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 	// resize
 	$(window).resize(function(){
-		$(".workList").css({"margin-top" : $(".mainVis").height(), "margin-bottom" : $("#footer").height()});
+		$(".conWrap").css({"margin-top" : $(".mainVis").height(), "margin-bottom" : $("#footer").outerHeight(true)});
 	});$(window).resize();
 	
 

@@ -7,9 +7,12 @@
 .mainVis .visCon > div {position:relative; display:table-cell; vertical-align:middle; text-align:center;}
 .mainVis .visCon .tit {font-weight:bold; font-size:120px; color:#fff;}
 
+/* My skills */
+.mySkill {position:relative; padding:100px 0; background:#fafafa; text-align:center;}
+.mySkill .skillList {}
+
 /* Work List */
-.workList {position:relative; padding:100px 5%; background:#fafafa; z-index:2;}
-.workList > .tit {font-family:'Helvetica', '맑은 고딕', 'Malgun Gothic',  sans-serif; font-weight:700; font-size:80px; color:#000; text-align:center;}
+.workList {position:relative; padding:100px 5%; background:#fafafa;}
 #grid[data-columns]::before {content:'3 .column.size-1of3';}
 .workList .list {margin-top:85px;}
 .workList .list:after {content:''; display:block; clear:both;}
