@@ -11,22 +11,32 @@
 	<link rel="shortcut icon" href="./images/favicon.ico" />
 	<link rel="apple-touch-icon" href="./images/favicon.ico" />
 
+	<link rel="stylesheet" href="./css/style.css" />
+
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="./fonts/fontawesome-free-5.5.0/all.min.css" />
 	<script type="text/javascript" src="./fonts/fontawesome-free-5.5.0/all.min.js"></script>
 	<!-- // fontawesome -->
-
-	<link rel="stylesheet" href="./css/style.css" />
+		
+	<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="./js/salvattore.min.js"></script>
 </head>
 <body>
+	<!-- loading -->
 	<div class="loading">
 		<p><i class="fas fa-spinner"></i></p>
 	</div>
+	<!-- // loading -->
+
+	<!-- wrap -->
 	<div id="wrap">
 		<!-- header -->
 		<header id="header">
 			<h1><a href="javascript:" class="logo">H</a></h1>
 		</header>
+		<!-- // header -->
 
 		<!-- Main Visual -->
 		<div class="main_vis">
@@ -37,10 +47,11 @@
 				</div>
 			</div>
 		</div>
+		<!-- Main Visual -->
 		
-		<!-- Main Content -->
+		<!-- con_wrap -->
 		<div class="con_wrap">
-			<!-- Skill -->
+			<!-- my_skill -->
 			<div class="my_skill">
 				<p class="main_tit">Skills</p>
 				<ul class="skill_list">
@@ -50,8 +61,9 @@
 					<li>JQUERY</li>
 				</ul>
 			</div>
+			<!-- // my_skill -->
 			
-			<!-- Work List -->
+			<!-- work_list -->
 			<div class="work_list">
 				<p class="main_tit">Works</p>
 				<div id="grid" class="list" data-columns>
@@ -66,7 +78,9 @@
 					<div class="work"><a href="javascript:"><img src="http://fakeimg.pl/500x550" alt="9" /><div class="text_wrap"><div class="text_div">page title</div></div></a></div>
 				</div>
 			</div>
+			<!-- // work_list -->
 		</div>
+		<!-- // con_wrap -->
 		
 		<!-- footer -->
 		<footer id="footer">
@@ -81,11 +95,8 @@
 				</div>
 			</div>
 		</footer>
+		<!-- // footer -->
 	</div>
-		
-	<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
-	<script type="text/javascript" src="./js/script.js"></script>
-	<script type="text/javascript" src="./js/salvattore.min.js"></script>
+	<!-- // wrap -->
 </body>
 </html>
