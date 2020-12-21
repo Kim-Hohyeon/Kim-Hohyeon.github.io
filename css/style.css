@@ -16,7 +16,6 @@
 
 /* Work List */
 .work_list {position:relative; padding:100px 5%; background:#fafafa;}
-#grid[data-columns]::before {content:'3 .column.size-1of3';}
 .work_list .list {margin-top:85px;}
 .work_list .list:after {content:''; display:block; clear:both;}
 .work_list .work {width:100%; background:#ddd; margin-top:15px;}
@@ -27,23 +26,17 @@
 .work_list .work a .text_wrap .text_div {position:absolute; top:50%; left:0; width:100%; font-size:30px; color:#fff; text-align:center; -webkit-transform:translate(0,-50%); transform:translate(0,-50%);}
 .work_list .work a:hover .text_wrap, .work_list .work a:focus .text_wrap {opacity:1; -webkit-transition:opacity .3s; transition:opacity .3s;}
 .work_list .column {padding:15px 10px; float: left; box-sizing:border-box;}
-.work_list .size-1of1 {width:100%;}
-.work_list .size-1of2 {width:50%;}
-.work_list .size-1of3 {width:33.333%;}
 
 @media screen and (min-width:1200px) {
-	/* Work List */
-	#grid[data-columns]::before {content:'3 .column.size-1of3';}
+	
 }
 
 @media screen and (min-width:759px) and (max-width:1119px) {
-	/* Work List */
-	#grid[data-columns]::before {content:'2 .column.size-1of2';}
+	
 }
 
 @media screen and (max-width:758px){
-	/* Work List */
-	#grid[data-columns]::before {content:'1 .column.size-1of1';}
+	
 }
 
 @media screen and (max-width:350px){
