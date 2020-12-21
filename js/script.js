@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// loading
 	$(window).on("load", function(){
 		$(".loading").fadeOut(300, function(){
 			$(this).remove();
