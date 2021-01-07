@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	// loading
 	$(window).on("load", function(){
+		$(".loading p").text("반갑습니다");
 		$(".loading").fadeOut(300, function(){
 			$(this).remove();
 		});
