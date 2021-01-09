@@ -11,23 +11,28 @@
 .main_vis .vis_con .scroll_txt span {margin-left:10px;}
 
 /* My skills */
-.my_skill {position:relative; padding:100px 0; background:#fafafa; text-align:center;}
+.my_skill {position:relative; padding:100px 3%; background:#fafafa; text-align:center;}
 .my_skill .skill_list {position:relative; text-align:center; margin-top:80px;}
 .my_skill .skill_list li {display:inline-block;}
 
 /* Work List */
-.work_list {position:relative; padding:100px 5%; background:#fafafa;}
-.work_list .list {margin-top:85px;}
+.work_list {position:relative; padding:100px 3%; background:#fafafa;}
+.work_list .list {display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); grid-gap:30px; margin-top:85px;}
 .work_list .list:after {content:''; display:block; clear:both;}
-.work_list .work {width:100%; background:#ddd; margin-top:15px;}
-.work_list .work:first-child {margin-top:0;}
-.work_list .work a {position:relative; display:block;}
-.work_list .work img {width:100%; height:auto;}
-.work_list .work a .text_wrap {position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; -webkit-transition:opacity .3s; transition:opacity .3s;}
-.work_list .work a .text_wrap .text_div {position:absolute; top:50%; left:0; width:100%; font-size:30px; color:#fff; text-align:center; -webkit-transform:translate(0,-50%); transform:translate(0,-50%);}
-.work_list .work a:hover .text_wrap, .work_list .work a:focus .text_wrap {opacity:1; -webkit-transition:opacity .3s; transition:opacity .3s;}
-.work_list .column {padding:15px 10px; float: left; box-sizing:border-box;}
+.work_list .list .work {width:100%; background:#fff; border:1px solid #ddd; border-radius:6px; overflow:hidden;}
+.work_list .list .work:first-child {margin-top:0;}
+.work_list .list .work a {position:relative; display:block;}
+.work_list .list .work a .img {position:relative; width:100%; height:200px; border-bottom:1px solid #ddd; background-size:100%; background-repeat:no-repeat; background-position:0 0; transition:0.7s;}
+.work_list .list .work a .txt_wrap {position:relative; width:100%; padding:30px;}
+.work_list .list .work a .txt_wrap .tit {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-weight:800; font-size:20px; color:#000;}
+.work_list .list .work a .txt_wrap .date {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-weight:400; font-size:14px; color:#555; margin-top:15px;}
 
+.work_list .list .work:hover {box-shadow:0 20px 30px -2px rgba(20,20,20,0.2);}
+.work_list .list .work:hover a .img {background-position:0 100%; transition:0.7s;}
+.work_list .list .work:hover a .txt_wrap .tit {text-decoration:underline}
+
+
+/* resposive*/
 @media screen and (min-width:1200px) {
 	
 }
