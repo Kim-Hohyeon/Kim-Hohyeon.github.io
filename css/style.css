@@ -3,7 +3,7 @@
 
 /* Main Visual */
 .main_vis {position:fixed; top:0; left:0; width:100%; height:100vh; min-height:700px; background:#ddd url("../images/bg/mainVis_bg.jpg") no-repeat 50% 50%; background-size:cover; z-index:1;}
-.main_vis:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.2);}
+.main_vis:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3);}
 .main_vis .vis_con {display:table; table-layout:fixed; width:100%; height:100%;}
 .main_vis .vis_con > div {position:relative; display:table-cell; vertical-align:middle; text-align:center;}
 .main_vis .vis_con .tit {font-weight:bold; font-size:130px; color:#fff;}

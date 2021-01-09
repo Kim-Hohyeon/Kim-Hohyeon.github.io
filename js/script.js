@@ -9,8 +9,14 @@ $(document).ready(function(){
 		}});
 	});
 
+	// to top
 	$(".logo").click(function(){
 		TweenMax.to($("html, body"), 0.8, {scrollTop:0, ease:Power3.easeInOut});
+	});
+
+	// main visual move
+	$(".main_vis").mousemove(function(e){
+		console.log(e.pageX, e.pageY);
 	});
 
 
