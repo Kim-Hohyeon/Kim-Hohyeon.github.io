@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	// loading
 	$(window).on("load", function(){
-		$(".loading p").text("반갑습니다");
-		$(".loading").fadeOut(300, function(){
-			$(this).remove();
-		});
+		TweenMax.to($('.loading .txt1'), 0.6, {marginTop:-100, opacity:0, ease:Power3.easeOut});
+		TweenMax.to($('.loading .txt2'), 0.6, {marginTop:0, opacity:1, ease:Power3.easeOut, onComplete:function(){
+			TweenMax.to($('.loading'), 1, {opacity:0, ease:Power3.easeOut, onComplete:function(){
+				$(".loading").remove();
+			}});
+		}});
 	});
 
 	$(".logo").click(function(){
