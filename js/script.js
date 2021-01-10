@@ -18,8 +18,15 @@ $(document).ready(function(){
 	});
 
 	// main visual move
-	$(".main_vis").mousemove(function(e){
-		console.log(e.pageX, e.pageY);
+	var visX, visY;
+	$(window).mousemove(function(e){
+		if($(window).scrollTop() < window.innerHeight){
+			visX = (window.innerWidth/2 - e.pageX) / 10;
+			visY = (window.innerHeight/2 - e.pageY) / 10;
+			
+			TweenMax.to($('.main_vis .vis_bg'), 1, {marginTop:-visY, marginLeft:-visX, ease:Power3.easeOut});
+			TweenMax.to($('.main_vis .vis_con'), 1, {marginTop:visY, marginLeft:visX, ease:Power3.easeOut});
+		}
 	});
 
 
@@ -38,7 +45,12 @@ $(document).ready(function(){
 		}
 
 		if($(window).scrollTop() <= $(window).height()){
-			TweenMax.to($('.main_vis'), 0.3, {top:-$(window).scrollTop()/4, ease:Power3.easeOut});
+			$('.main_vis').css("z-index", 1);
+			$('footer').css("z-index", 0);
+			TweenMax.to($('.main_vis'), 0.3, {top:-$(window).scrollTop()/2, ease:Power3.easeOut});
+		}else{
+			$('.main_vis').css("z-index", 0);
+			$('footer').css("z-index", 1);
 		}
 
 		if($(window).scrollTop() + $(window).height() >= $(".work_list").offset().top + $(".work_list").height()){
