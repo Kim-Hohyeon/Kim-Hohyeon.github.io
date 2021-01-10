@@ -16,16 +16,16 @@
 .my_about {position:relative; padding:100px 3%;}
 .my_about .conArea {position:relative; width:100%;}
 .my_about .conArea:after {content:''; display:block; width:100%; clear:both;}
-.my_about .conArea .left {position:relative; width:50%; float:left;}
-.my_about .conArea .left .photo {position:relative; width:320px; height:320px;}
+.my_about .conArea .left {position:relative; width:50%; padding-right:30px; float:left;}
+.my_about .conArea .left .photo {position:relative; max-width:100%; width:320px; height:320px;}
 .my_about .conArea .left .photo:before {content:''; position:absolute; top:30px; left:30px; width:100%; height:100%; border:3px solid #000;}
 .my_about .conArea .left .photo span {position:relative; display:block; width:100%; height:100%; overflow:hidden;}
 .my_about .conArea .left .photo img {width:115%;}
-.my_about .conArea .right {position:relative; width:50%; float:right;}
+.my_about .conArea .right {position:relative; width:50%; padding-left:30px; float:right;}
 .my_about .conArea .right dl {margin-top:50px;}
 .my_about .conArea .right dl:first-child {margin-top:0;}
 .my_about .conArea .right dl dt {font-family:'Helvetica', '맑은 고딕', 'Malgun Gothic', sans-serif; font-size:30px; color:#000; margin-bottom:15px;}
-.my_about .conArea .right dl dd {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-size:16px; color:#000; line-height:25px;}
+.my_about .conArea .right dl dd {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-size:16px; color:#000; line-height:25px; word-break:keep-all;}
 
 /* skills */
 .my_skill {position:relative; padding:100px 3%; text-align:center;}
