@@ -3,7 +3,7 @@
 
 /* Main Visual */
 .main_vis {position:fixed; top:0; left:0; width:100%; height:100vh; min-height:700px; background:#000; z-index:1;}
-.main_vis .vis_bg {position:absolute; top:50%; left:50%; width:110%; height:110%; background:#000 url("../images/bg/mainVis_bg.jpg") no-repeat 50% 50%; background-size:cover; transform:translate(-50%, -50%);}
+.main_vis .vis_bg {position:absolute; top:50%; left:50%; width:120%; height:120%; background:#000 url("../images/bg/mainVis_bg.jpg") no-repeat 50% 50%; background-size:cover; transform:translate(-50%, -50%);}
 .main_vis .vis_bg:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3);}
 .main_vis .vis_con {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:80px; color:#fff; text-align:center; white-space:nowrap;}
 .main_vis .vis_con .txt1 {position:relative; top:100px; opacity:0;}
@@ -12,11 +12,20 @@
 .main_vis .vis_con .scroll_txt {font-size:14px; color:rgba(255,255,255,0.5); margin-top:50px;}
 .main_vis .vis_con .scroll_txt span {margin-left:10px;}
 
-/* profile */
-.my_profile {position:relative; padding:100px 3%;}
-.my_profile .conArea {position:relative; width:100%; clear:both;}
-.my_profile .conArea .left {positon:relative; width:50%; float:left;}
-.my_profile .conArea .right {positon:relative; width:50%; float:right;}
+/* about */
+.my_about {position:relative; padding:100px 3%;}
+.my_about .conArea {position:relative; width:100%;}
+.my_about .conArea:after {content:''; display:block; width:100%; clear:both;}
+.my_about .conArea .left {position:relative; width:50%; float:left;}
+.my_about .conArea .left .photo {position:relative; width:320px; height:320px;}
+.my_about .conArea .left .photo:before {content:''; position:absolute; top:30px; left:30px; width:100%; height:100%; border:3px solid #000;}
+.my_about .conArea .left .photo span {position:relative; display:block; width:100%; height:100%; overflow:hidden;}
+.my_about .conArea .left .photo img {width:115%;}
+.my_about .conArea .right {position:relative; width:50%; float:right;}
+.my_about .conArea .right dl {margin-top:50px;}
+.my_about .conArea .right dl:first-child {margin-top:0;}
+.my_about .conArea .right dl dt {font-family:'Helvetica', '맑은 고딕', 'Malgun Gothic', sans-serif; font-size:30px; color:#000; margin-bottom:15px;}
+.my_about .conArea .right dl dd {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-size:16px; color:#000; line-height:25px;}
 
 /* skills */
 .my_skill {position:relative; padding:100px 3%; text-align:center;}
@@ -32,8 +41,9 @@
 .my_work .work_list .work a {position:relative; display:block;}
 .my_work .work_list .work a .img {position:relative; width:100%; height:200px; border-bottom:1px solid #ddd; background-size:100%; background-repeat:no-repeat; background-position:0 0; transition:0.7s;}
 .my_work .work_list .work a .txt_wrap {position:relative; width:100%; padding:30px;}
-.my_work .work_list .work a .txt_wrap .tit {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-weight:800; font-size:20px; color:#000;}
-.my_work .work_list .work a .txt_wrap .date {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-weight:400; font-size:14px; color:#555; margin-top:15px;}
+.my_work .work_list .work a .txt_wrap .tit {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-weight:800; font-size:20px; color:#000; margin-bottom:15px;}
+.my_work .work_list .work a .txt_wrap .txt {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-weight:400; font-size:14px; color:#555; margin-bottom:10px;}
+.my_work .work_list .work a .txt_wrap p:last-child {margin-bottom:0;}
 
 .my_work .work_list .work:hover {box-shadow:0 20px 30px -2px rgba(20,20,20,0.2);}
 .my_work .work_list .work:hover a .img {background-position:0 100%; transition:0.7s;}
