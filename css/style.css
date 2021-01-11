@@ -30,8 +30,11 @@
 /* skills */
 .my_skill {position:relative; padding:100px 3%; text-align:center;}
 .my_skill .skill_list {position:relative; display:flex; justify-content:center; align-items:center; flex-wrap:wrap;}
-.my_skill .skill_list li {padding:0 10px 20px;}
+.my_skill .skill_list li {padding:0 15px 30px;}
 .my_skill .skill_list li img {width:100px; height:100px;}
+.my_skill .skill_info {border-top:1px solid #000;}
+.my_skill .skill_info p {font-size:15px; word-break:keep-all; line-height:1.5;}
+.my_skill .skill_info p strong{display:block; padding:30px 0 15px; font-size:25px; font-weight:bold; color:#000; line-height:1;}
 
 /* Work List */
 .my_work {position:relative; padding:100px 3%;}
