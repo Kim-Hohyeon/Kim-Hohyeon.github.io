@@ -82,7 +82,6 @@ th{font-weight:normal}
 /* footer */
 #footer {position:fixed; bottom:0; left:0; width:100%; text-align:center; background:#eee url("../images/bg/footer_bg.jpg") no-repeat 50% 97%; background-size:cover; z-index:0;}
 #footer:before {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8);}
-#footer.on {z-index:1;}
 #footer .content {position:relative; width:100%; height:100%; margin:0 auto;}
 #footer .content .contact {padding:100px 0;}
 #footer .content .contact .main_tit {padding-bottom:50px; margin-bottom:0; font-weight:400; color:rgba(255,255,255,1);}

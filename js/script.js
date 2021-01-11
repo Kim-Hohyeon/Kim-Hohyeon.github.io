@@ -58,17 +58,11 @@ $(document).ready(function(){
 
 		if($(window).scrollTop() <= $(window).height()){
 			$('.main_vis').css("z-index", 1);
-			$('footer').css("z-index", 0);
+			$('#footer').css("z-index", 0);
 			TweenMax.to($('.main_vis'), 0.3, {top:-$(window).scrollTop()/2, ease:Power3.easeOut});
 		}else{
 			$('.main_vis').css("z-index", 0);
-			$('footer').css("z-index", 1);
-		}
-
-		if($(window).scrollTop() + $(window).height() >= $(".work_list").offset().top + $(".work_list").height()){
-			$("#footer").addClass("on");
-		}else{
-			$("#footer").removeClass("on");
+			$('#footer').css("z-index", 1);
 		}
 	});
 });
