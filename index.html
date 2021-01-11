@@ -21,6 +21,15 @@
 	<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="./js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="./js/script.js"></script>
+
+	<script type="text/javascript">
+		if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+			window.location = 'microsoft-edge:' + window.location;
+			setTimeout(function() {
+				window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+			}, 1);
+		}
+	</script>
 </head>
 <body>
 	<!-- loading -->
