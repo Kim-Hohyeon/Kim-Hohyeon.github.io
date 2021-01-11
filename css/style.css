@@ -38,7 +38,7 @@
 
 /* Work List */
 .my_work {position:relative; padding:100px 3%;}
-.my_work .work_list {display:-ms-grid; display:grid; -ms-grid-columns:repeat(auto-fill, minmax(340px, 1fr)); grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); grid-gap:30px;}
+.my_work .work_list {display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); grid-gap:30px;}
 .my_work .work_list .work {background:#fff; border:1px solid #ddd; border-radius:6px; overflow:hidden;}
 .my_work .work_list .work:first-child {margin-top:0;}
 .my_work .work_list .work a {position:relative; display:block;}
