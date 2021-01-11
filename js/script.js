@@ -5,6 +5,7 @@ $(document).ready(function(){
 		TweenMax.to($('.loading .txt2'), 1, {marginTop:0, opacity:1, delay:0.2, ease:Power3.easeOut, onComplete:function(){
 			TweenMax.to($('.loading'), 1, {opacity:0, delay:0.7, ease:Power3.easeOut, onComplete:function(){
 				$(".loading").remove();
+				TweenMax.to($('header'), 1.5, {top:0, opacity:1, ease:Power3.easeOut});
 				TweenMax.to($('.main_vis .vis_con .txt1'), 1.5, {top:0, opacity:1, ease:Power3.easeOut});
 				TweenMax.to($('.main_vis .vis_con .txt2'), 1.5, {top:0, opacity:1, delay:0.2, ease:Power3.easeOut});
 				TweenMax.to($('.main_vis .vis_con .txt3'), 1.5, {top:0, opacity:1, delay:0.4, ease:Power3.easeOut});
@@ -15,6 +16,17 @@ $(document).ready(function(){
 	// to top
 	$(".logo").click(function(){
 		TweenMax.to($("html, body"), 0.8, {scrollTop:0, ease:Power3.easeInOut});
+	});
+
+	// menu click
+	$("#header .menu a").each(function(i){
+		$(this).click(function(){
+			if(i == 3){
+				TweenMax.to($("html, body"), 0.8, {scrollTop:$("#wrap").height(), ease:Power3.easeInOut});
+			}else{
+				TweenMax.to($("html, body"), 0.8, {scrollTop:$(".main_tit").eq(i).offset().top - 100, ease:Power3.easeInOut});
+			}
+		});
 	});
 
 	// main visual move

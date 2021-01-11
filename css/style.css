@@ -25,12 +25,13 @@
 .my_about .conArea .right dl {margin-top:50px;}
 .my_about .conArea .right dl:first-child {margin-top:0;}
 .my_about .conArea .right dl dt {font-family:'Helvetica', '맑은 고딕', 'Malgun Gothic', sans-serif; font-size:30px; color:#000; margin-bottom:15px;}
-.my_about .conArea .right dl dd {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-size:16px; color:#000; line-height:25px; word-break:keep-all;}
+.my_about .conArea .right dl dd {font-family:'Nanum Gothic', 'Malgun Gothic', AppleGothic, sans-serif; font-size:15px; color:#000; line-height:25px; word-break:keep-all;}
 
 /* skills */
 .my_skill {position:relative; padding:100px 3%; text-align:center;}
-.my_skill .skill_list {position:relative; text-align:center;}
-.my_skill .skill_list li {display:inline-block;}
+.my_skill .skill_list {position:relative; display:flex; justify-content:center; align-items:center; flex-wrap:wrap;}
+.my_skill .skill_list li {padding:0 10px 20px;}
+.my_skill .skill_list li img {width:100px; height:100px;}
 
 /* Work List */
 .my_work {position:relative; padding:100px 3%;}
