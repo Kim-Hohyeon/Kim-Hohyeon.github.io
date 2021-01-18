@@ -34,7 +34,7 @@
 .my_skill .skill_list li img {width:100px; height:100px;}
 .my_skill .skill_info {border-top:1px solid #000;}
 .my_skill .skill_info p {font-size:15px; word-break:keep-all; line-height:1.5;}
-.my_skill .skill_info p strong{display:block; padding:30px 0 15px; font-size:25px; font-weight:bold; color:#000; line-height:1;}
+.my_skill .skill_info p strong {display:block; padding:30px 0 15px; font-size:25px; font-weight:bold; color:#000; line-height:1;}
 
 /* Work List */
 .my_work {position:relative; padding:100px 3%;}
@@ -74,6 +74,7 @@
     .my_about .conArea .right {float:none; width:100%; margin-top:70px;}
 
     .my_skill {padding:70px 3%;}
+    .my_skill .skill_list li img {width:80px; height:80px;}
 
     .my_work {padding:70px 3%;}
 }
@@ -82,8 +83,14 @@
     .main_vis .vis_con {font-size:30px;}
     
     .my_about {padding:50px 3%;}
+    .my_about .conArea .right dl {margin-top:40px;}
+    .my_about .conArea .right dl dt {font-size:24px; margin-bottom:10px;}
+    .my_about .conArea .right dl dd {font-size:13px;}
 
     .my_skill {padding:50px 3%;}
+    .my_skill .skill_list li img {width:60px; height:60px;}
+    .my_skill .skill_info p {font-size:13px;}
+    .my_skill .skill_info p strong {padding:20px 0 10px; font-size:20px;}
 
     .my_work {padding:50px 3%;}
     .my_work .work_list {grid-template-columns:repeat(auto-fill, minmax(290px, 1fr));}

@@ -24,7 +24,7 @@ $(document).ready(function(){
 			if(i == 3){
 				TweenMax.to($("html, body"), 0.8, {scrollTop:$("#wrap").height(), ease:Power3.easeInOut});
 			}else{
-				TweenMax.to($("html, body"), 0.8, {scrollTop:$(".main_tit").eq(i).offset().top - 100, ease:Power3.easeInOut});
+				TweenMax.to($("html, body"), 0.8, {scrollTop:$(".main_tit").eq(i).offset().top - 80, ease:Power3.easeInOut});
 			}
 		});
 	});
