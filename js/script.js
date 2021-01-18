@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 	// resize
 	$(window).resize(function(){
-		$(".con_wrap").css({"margin-top" : $(".main_vis").height(), "margin-bottom" : $("#footer").outerHeight(true)});
+		$(".con_wrap").css({"margin-top" : $("body").height(), "margin-bottom" : $("#footer").outerHeight(true)});
 	});$(window).resize();
 	
 
